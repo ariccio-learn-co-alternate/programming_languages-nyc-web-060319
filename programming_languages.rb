@@ -7,7 +7,6 @@ def reformat_languages(languages)
       binding.pry
       if new_hash.include?(language)
         new_hash[language][:style] << language_data[:type]
-      end
       else
         new_hash[language] = { :type => language_data[:type], :style => [language_type] }
       end
