@@ -8,8 +8,8 @@ def reformat_languages(languages)
         binding.pry
         new_hash[language][:style] << language_data[:type]
       else
-        binding.pry
         new_hash[language] = { :type => language_data[:type], :style => [language_type] }
+        binding.pry
       end
     end
   end
