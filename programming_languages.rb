@@ -8,6 +8,9 @@ def reformat_languages(languages)
       if new_hash.include?(language)
         new_hash[language][:style] << language_data[:type]
       end
+      else
+        new_hash[language] = {
+      end
     end
   end
 end
